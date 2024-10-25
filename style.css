@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.common{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 250px;
+    height:250px;
+    background-color: red;
+position: relative;
+align-items: center;
+animation-name: box_1;
+animation-duration: 6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:  alternate;
+}
+
+.first{
+    position: absolute;
+    color: white;
+    font-size: 90px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+}
+
+.strelka_1{
+font-size: 190px;  
+animation-name: right_arrow;  
+}
+
+
+.box_2{ 
+    width: 250px;
+    height:250px;
+    background-color: red;
+position: relative;
+    animation-name: box_2;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: normal;
+}
+
+.second{
+    position: absolute;
+    color: white;
+    font-size: 90px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    
+}
+
+.arrows span{
+    font-size: 190px;
+}
+
+.common_2{
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0, 68%);
+}
+
+p{
+ font-weight: 700;
+}
+
+.third{
+    animation-name: box_3;
+    animation-duration: 4s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:  alternate;
+}
+
+.fourth{
+    animation-name: box_4;
+    animation-duration: 4s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:  alternate;
+}
+
+
+@keyframes box_1{
+0%{
+    transform: translate(0);
+}
+
+25%{
+    transform: translate(1660px);
+}
+
+50%{
+transform: translate(1660px, 798px);
+}
+
+75%{
+transform: translateY(-798px);
+
+}
+100%{
+transform: translate(100px, -200px);
+
+}
+}
+@keyframes box_2{
+from{
+    transform: translate(0);
+}
+to{
+    transform: translateY(798px);
+}
+
+
+}
